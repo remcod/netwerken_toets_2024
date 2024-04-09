@@ -1,8 +1,8 @@
 <?php
 
-$dbhost = 'localhost:3306';
-$dbuser = 'root';
-$dbpass = '';
+$dbhost = 'localhost';
+$dbuser = 'net24rdellemann_netwerken_toets_2024';
+$dbpass = 'A)b@i^I$Qb3(';
 $dbname = 'netwerken_2024';
 
 $conn = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
