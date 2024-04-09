@@ -3,6 +3,14 @@ include 'config/db_config.php';
 $a=mysqli_query($conn,"SELECT * FROM students WHERE student_id='$_GET[student_id]'");
 $b=mysqli_fetch_array($a,MYSQLI_ASSOC)
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update</title>
+</head>
+<body>
 <form method="post">
 	Student ID : <input type="text" name="student_id" placeholder="Insert Student ID" value="<?= $b['student_id'] ?>"><br><br>
 	Name : <input type="text" name="name" placeholder="Vul in: Name" value="<?= $b['name']; ?>"><br><br>
@@ -36,3 +44,5 @@ if(isset($_POST['update']))
 }
 
 ?>   
+</body>
+</html>

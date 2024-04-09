@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>add</title>
+</head>
+<body>
 <form method="post">
 	Student ID : <input type="text" name="student_id" placeholder="Vul in: Student ID"><br><br>
 	Naam : <input type="text" name="name" placeholder="Vul in: Naam"><br><br>
@@ -31,3 +39,5 @@ include 'config/db_config.php';
 }
 
 ?>   
+</body>
+</html>
